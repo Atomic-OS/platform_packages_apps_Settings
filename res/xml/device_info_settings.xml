@@ -73,6 +73,12 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/device_info_default"/>
 
+        <!-- Atomic-OS version -->
+        <Preference android:key="aos_mod_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/aos_mod_version"
+                android:summary="@string/mod_version_default" />
+
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
                 android:title="@string/security_patch"
