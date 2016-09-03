@@ -20,4 +20,8 @@
     <string name="aos_mod_version">Atomic-OS version</string>
     <string name="mod_version_default">Unknown</string>
 
+    <!-- Atomic-OS Laboratory -->
+    <string name="laboratory_title">Laboratory</string>
+    <string name="header_category_custom">Customization</string>
+
 </resources>

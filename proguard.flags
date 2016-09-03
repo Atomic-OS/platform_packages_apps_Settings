@@ -23,6 +23,9 @@
 -keep class com.android.settings.display.NightDisplaySettings
 -keep class com.android.settings.preference.*
 
+# Atomic-OS Laboratory
+-keep class com.atomicos.laboratory.**
+
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
   *** onClick*(...);

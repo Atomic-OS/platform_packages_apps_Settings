@@ -168,4 +168,7 @@ public class Settings extends SettingsActivity {
     public static class SuperSUActivity extends SettingsActivity { /* empty */ }
     public static class SuperUserActivity extends SettingsActivity { /* empty */ }
     public static class MagiskActivity extends SettingsActivity { /* empty */ }
+
+    // Atomic-OS Laboratory
+    public static class MainSettingsActivity extends SettingsActivity { /* empty */ }
 }
