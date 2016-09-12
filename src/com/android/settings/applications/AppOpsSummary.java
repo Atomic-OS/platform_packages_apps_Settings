@@ -122,6 +122,9 @@ public class AppOpsSummary extends InstrumentedPreferenceFragment {
 
         tabs.setTabIndicatorColorResource(colorAccent);
 
+        // HACK - https://code.google.com/p/android/issues/detail?id=213359
+        ((ViewPager.LayoutParams)tabs.getLayoutParams()).isDecor = true;
+
         // We have to do this now because PreferenceFrameLayout looks at it
         // only when the view is added.
         if (container instanceof PreferenceFrameLayout) {
