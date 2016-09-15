@@ -3312,6 +3312,10 @@
                        android:resource="@string/aos_laboratory_activity_summary"/>
         </activity>
 
+        <!-- Battery and notification lights -->
+        <activity android:name="com.aos.laboratory.cat.NotificationLightSettings" />
+        <activity android:name="com.aos.laboratory.cat.BatteryLightSettings" />
+
         <!-- This is the longest AndroidManifest.xml ever. -->
 
     </application>
