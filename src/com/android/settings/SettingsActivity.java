@@ -139,6 +139,10 @@ import com.android.settingslib.drawer.Tile;
 
 import java.net.URISyntaxException;
 import com.atomicos.laboratory.MainSettings;
+import com.atomicos.laboratory.dui.FlingSettings;
+import com.atomicos.laboratory.dui.NavbarSettings;
+import com.atomicos.laboratory.dui.SmartbarSettings;
+import com.atomicos.laboratory.dui.PulseSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -382,7 +386,11 @@ public class SettingsActivity extends SettingsDrawerActivity
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             ExpandedDesktopPreferenceFragment.class.getName(),
-            MainSettings.class.getName()
+            MainSettings.class.getName(),
+            NavbarSettings.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName(),
+            PulseSettings.class.getName()
     };
 
 
