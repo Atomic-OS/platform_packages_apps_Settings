@@ -148,4 +148,8 @@
     <string name="custom_encryption_and_credential_settings_summary_on">Device is encrypted</string>
     <string name="custom_encryption_and_credential_settings_summary_off">Device is decrypted</string>
 
+    <!-- Wake on Plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+
 </resources>
