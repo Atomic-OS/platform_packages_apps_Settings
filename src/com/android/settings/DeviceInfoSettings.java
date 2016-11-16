@@ -30,6 +30,7 @@ import android.os.UserManager;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
 import android.telephony.CarrierConfigManager;
@@ -83,10 +84,13 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private PreferenceScreen mOTA;
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
+    private static final String KEY_ABOUT_TD = "abouttd";
+    private static final String KEY_ABOUT_TD_PACKAGE_NAME = "com.about.td";
     long[] mHits = new long[3];
     int mDevHitCountdown;
     Toast mDevHitToast;
 
+    private PreferenceScreen mTDAbout;
     private UserManager mUm;
 
     private EnforcedAdmin mFunDisallowedAdmin;
@@ -110,6 +114,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         mUm = UserManager.get(getActivity());
 
         addPreferencesFromResource(R.xml.device_info_settings);
+
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         setStringSummary(KEY_FIRMWARE_VERSION, Build.VERSION.RELEASE);
         findPreference(KEY_FIRMWARE_VERSION).setEnabled(true);
@@ -144,6 +150,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         } else if (!SELinux.isSELinuxEnforced()) {
             String status = getResources().getString(R.string.selinux_status_permissive);
             setStringSummary(KEY_SELINUX_STATUS, status);
+        }
+
+        //Remove About Team Darkness if package is removed
+        mTDAbout = (PreferenceScreen) findPreference(KEY_ABOUT_TD);
+        if (!aosutils.isPackageInstalled(getActivity(), KEY_ABOUT_TD_PACKAGE_NAME)) {
+            prefSet.removePreference(mTDAbout);
         }
 
         // Remove selinux information if property is not present

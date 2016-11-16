@@ -28,6 +28,10 @@
     <string name="atomicota_title">Atomic Updates</string>
     <string name="atomicota_summary">Get latest build</string>
 
+    <!-- Darkness Hub -->
+    <string name="about_td">Darkness Hub</string>
+    <string name="about_td_summary">Get to know about us !</string>
+
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
     <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>

@@ -19,6 +19,18 @@
         android:title="@string/about_settings">
 <PreferenceScreen android:layout="@layout/logo" android:key="aos_logo" />
 
+
+        <!-- Darkness Hub -->
+        <PreferenceScreen
+            android:key="abouttd"
+            android:title="@string/about_td" 
+	    android:summary="@string/about_td_summary"
+            android:icon="@drawable/ic_td_about" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.about.td"
+                    android:targetClass="com.about.td.Activitys.LaunchActivity" />
+        </PreferenceScreen>
+
         <!-- OTA -->
 	<PreferenceScreen
                android:key="atomicota"
