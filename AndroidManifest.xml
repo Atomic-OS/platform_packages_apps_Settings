@@ -3086,6 +3086,18 @@
                 android:value="com.atomicos.laboratory.dui.PulseSettings" />
         </activity>
 
+        <!-- Ambient settings activity. -->
+        <activity android:name="Settings$AmbientSettingsActivity"
+                android:label="@string/doze_settings"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.aos.AmbientSettings" />
+        </activity>
+
        <!-- System action picker -->
         <activity android:name="com.atomicos.laboratory.dui.ActionPickerDialogActivity"
                 android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
