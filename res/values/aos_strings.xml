@@ -72,6 +72,9 @@
     <string name="device_doze_title">Ambient display gestures</string>
     <string name="device_doze_summary">Set up extra gestures for ambient display mode</string>
 
+    <string name="double_tap_wake_doze_title">Double-tap to wake on doze</string>
+    <string name="double_tap_wake_doze_summary">Require a double-tap to wake the device on a doze pulse screen</string>
+
     <!-- double tap statusbar to sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
