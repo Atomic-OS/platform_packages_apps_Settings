@@ -31,10 +31,13 @@ import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
+import android.support.v7.preference.PreferenceScreen;
 import android.telephony.CarrierConfigManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
+
+import com.android.internal.util.aos.aosutils;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.dashboard.SummaryLoader;
@@ -74,7 +77,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_QGP_VERSION = "qgp_version";
     private static final String PROPERTY_QGP_VERSION = "persist.qgp.version";
     private static final String KEY_AOS_MOD_VERSION = "aos_mod_version";
+    private static final String KEY_OTA = "atomicota";
+    private static final String KEY_OTA_PACKAGE_NAME = "com.atomicos.ota";
 
+    private PreferenceScreen mOTA;
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
     long[] mHits = new long[3];
@@ -180,6 +186,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
         removePreferenceIfActivityMissing(
                 "safety_info", "android.settings.SHOW_SAFETY_AND_REGULATORY_INFO");
+
+        mOTA = (PreferenceScreen) findPreference(KEY_OTA);
+         String buildtype = SystemProperties.get("ro.aos.releasetype","labmade");
+         if (!buildtype.equalsIgnoreCase("atomicity") || !aosutils.isPackageInstalled(getActivity(), KEY_OTA_PACKAGE_NAME)) {
+             getPreferenceScreen().removePreference(mOTA);
+         }
     }
 
     @Override

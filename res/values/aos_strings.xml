@@ -24,6 +24,10 @@
     <string name="laboratory_title">Laboratory</string>
     <string name="header_category_custom">Customization</string>
 
+    <!-- OTA -->
+    <string name="atomicota_title">Atomic Updates</string>
+    <string name="atomicota_summary">Get latest build</string>
+
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
     <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>

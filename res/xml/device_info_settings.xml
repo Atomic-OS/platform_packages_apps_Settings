@@ -19,6 +19,17 @@
         android:title="@string/about_settings">
 <PreferenceScreen android:layout="@layout/logo" android:key="aos_logo" />
 
+        <!-- OTA -->
+	<PreferenceScreen
+               android:key="atomicota"
+               android:title="@string/atomicota_title" 
+  	       android:summary="@string/atomicota_summary">	
+               <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.atomicos.ota"
+                android:targetClass="com.atomicos.ota.MainActivity" />
+        </PreferenceScreen>
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
