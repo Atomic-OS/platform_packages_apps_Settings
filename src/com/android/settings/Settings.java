@@ -190,5 +190,7 @@ public class Settings extends SettingsActivity {
     public static class StorageDashboardActivity extends SettingsActivity {}
     public static class UserAndAccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
+    // Laboratory
+    public static class AtomicSettingsActivity extends SettingsActivity {}
 
 }
