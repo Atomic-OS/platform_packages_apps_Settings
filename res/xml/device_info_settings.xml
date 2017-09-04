@@ -30,6 +30,15 @@
                           android:enabled="false"
                           android:layout="@layout/aos_logo_row" />
 
+         <!-- OTA -->
+         <Preference android:key="updates"
+             android:title="@string/update_settings_title"
+             android:summary="@string/update_settings_summary">
+             <intent android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.aos.ota"
+                 android:targetClass="com.aos.ota.activities.MainActivity" />
+         </Preference>
+
         <!-- AOS version -->
         <Preference android:key="aos_version"
                 android:title="@string/aos_version"
