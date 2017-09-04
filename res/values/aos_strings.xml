@@ -24,6 +24,10 @@
     <!-- About phone screen, device maintainer name -->
     <string name="device_maintainer">Maintainer</string>
 
+    <!-- OTA -->
+    <string name="update_settings_title">Updates</string>
+    <string name="update_settings_summary">Find new updates</string>
+
     <!-- Laboratory -->
     <string name="aos_laboratory_activity">Laboratory</string>
     <string name="aos_laboratory_activity_summary">Time to become a scientist !</string>
