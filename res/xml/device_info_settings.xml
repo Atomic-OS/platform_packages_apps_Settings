@@ -67,6 +67,11 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/summary_placeholder"/>
 
+        <!-- AOS version --> 
+        <Preference android:key="aos_version"
+                android:title="@string/aos_version"
+                android:summary="@string/aos_version_default"/>
+
         <!-- Security patch level -->
         <Preference android:key="security_patch"
                 android:title="@string/security_patch"
@@ -92,6 +97,11 @@
                 android:key="kernel_version"
                 android:title="@string/kernel_version"
                 android:summary="@string/summary_placeholder"/>
+
+        <!-- Build date -->
+        <Preference android:key="build_date"
+                android:title="@string/build_date"
+                android:summary="@string/build_date_default" />
 
         <!-- Detailed build version -->
         <Preference
