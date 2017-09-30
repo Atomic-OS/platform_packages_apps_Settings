@@ -138,6 +138,7 @@ import com.aos.laboratory.cat.NavigationBar;
 import com.aos.laboratory.cat.PulseSettings;
 import com.aos.laboratory.cat.SmartbarSettings;
 import com.aos.laboratory.cat.Buttons;
+import com.aos.laboratory.cat.HeadsUpSettings;
 
 public class SettingsGateway {
 
@@ -265,7 +266,8 @@ public class SettingsGateway {
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName(),
-            Buttons.class.getName()
+            Buttons.class.getName(),
+            HeadsUpSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
