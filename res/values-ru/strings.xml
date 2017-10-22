@@ -3833,4 +3833,7 @@
     <string name="new_device_suggestion_summary" product="tablet" msgid="393751455688210956">"Познакомьтесь со своим новым планшетом"</string>
     <string name="new_device_suggestion_summary" product="device" msgid="2939870049868336652">"Познакомьтесь со своим новым устройством"</string>
     <string name="disabled_low_ram_device" msgid="3751578499721173344">"Функция недоступна на этом устройстве."</string>
+    <!-- Screenshot sound -->  
+    <string name="screenshot_sound_title">Звук при снятии скриншота</string>  
+
 </resources>
