@@ -24,4 +24,7 @@
     <!-- About phone screen, device maintainer name -->
     <string name="device_maintainer">Maintainer</string>
 
+    <!-- Pixel color on sim card -->
+    <string name="default_sim_color">Pixel</string>
+
 </resources>
