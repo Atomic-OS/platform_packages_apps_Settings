@@ -9058,4 +9058,7 @@
 
     <!-- Note displayed when certain features are not available on low ram devices. [CHAR LIMIT=NONE] -->
     <string name="disabled_low_ram_device">This feature is not available on this device</string>
+
+    <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string> 
+
 </resources>
