@@ -25,6 +25,11 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </Preference>
 
+	<!-- AOS Banner -->
+        <PreferenceScreen android:key="aos_logo"
+                          android:enabled="false"
+                          android:layout="@layout/aos_logo_row" />
+
         <!-- AOS version -->
         <Preference android:key="aos_version"
                 android:title="@string/aos_version"
