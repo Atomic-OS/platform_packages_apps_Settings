@@ -48,6 +48,13 @@
          android:summary="@string/anbi_summary"
          android:defaultValue="false" />
 
+    <ListPreference
+        android:key="system_theme_style"
+        android:title="@string/system_theme_style_title"
+        android:persistent="false"
+        android:entries="@array/system_theme_style_entries"
+        android:entryValues="@array/system_theme_style_values" />
+
     <com.android.settingslib.RestrictedPreference
         android:key="wallpaper"
         android:title="@string/wallpaper_settings_title"
