@@ -33,6 +33,7 @@ import com.android.settings.deviceinfo.BuildDatePreference;
 import com.android.settings.deviceinfo.FccEquipmentIdPreferenceController;
 import com.android.settings.deviceinfo.FirmwareVersionPreferenceController;
 import com.android.settings.deviceinfo.AOSVersionPreference;
+import com.android.settings.deviceinfo.DeviceMaintainerPreference;
 import com.android.settings.deviceinfo.KernelVersionPreferenceController;
 import com.android.settings.deviceinfo.ManualPreferenceController;
 import com.android.settings.deviceinfo.RegulatoryInfoPreferenceController;
@@ -128,6 +129,7 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
         controllers.add(new AOSVersionPreference(context));
         controllers.add(new BuildDatePreference(context));
         controllers.add(new RegulatoryInfoPreferenceController(context));
+        controllers.add(new DeviceMaintainerPreference(context));
         controllers.add(new DeviceModelPreferenceController(context, fragment));
         controllers.add(new SecurityPatchPreferenceController(context));
         controllers.add(new FccEquipmentIdPreferenceController(context));
