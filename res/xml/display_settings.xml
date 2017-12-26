@@ -42,6 +42,12 @@
         settings:keywords="@string/keywords_display_auto_brightness"
         android:summary="@string/auto_brightness_summary" />
 
+    <com.android.settings.aos.SystemSettingSwitchPreference
+         android:key="anbi_enabled"
+         android:title="@string/anbi_title"
+         android:summary="@string/anbi_summary"
+         android:defaultValue="false" />
+
     <com.android.settingslib.RestrictedPreference
         android:key="wallpaper"
         android:title="@string/wallpaper_settings_title"
