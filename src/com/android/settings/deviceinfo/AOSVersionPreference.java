@@ -28,7 +28,7 @@ public class AOSVersionPreference extends AbstractPreferenceController implement
         PreferenceControllerMixin {
 
     private static final String KEY_AOS_VERSION_PREFS = "aos_version";
-    private static final String KEY_AOS_VERSION = "ro.aos.version";
+    private static final String KEY_AOS_VERSION = "ro.mod.version";
 
     public AOSVersionPreference(Context context) {
         super(context);
