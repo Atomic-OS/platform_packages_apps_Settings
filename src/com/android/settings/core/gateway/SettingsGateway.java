@@ -137,6 +137,7 @@ import com.aos.laboratory.cat.FlingSettings;
 import com.aos.laboratory.cat.NavigationBar;
 import com.aos.laboratory.cat.PulseSettings;
 import com.aos.laboratory.cat.SmartbarSettings;
+import com.aos.laboratory.cat.Buttons;
 
 public class SettingsGateway {
 
@@ -263,7 +264,8 @@ public class SettingsGateway {
             NavigationBar.class.getName(),
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
-            PulseSettings.class.getName()
+            PulseSettings.class.getName(),
+            Buttons.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -306,6 +308,7 @@ public class SettingsGateway {
             Settings.NavigationSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
-            Settings.PulseSettingsActivity.class.getName()
+            Settings.PulseSettingsActivity.class.getName(),
+            Settings.ButtonSettingsActivity.class.getName()
     };
 }
