@@ -14,24 +14,24 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, AOS version -->
-  <string name="aos_version">Atomic OS Version</string>
-  <string name="aos_version_default">Unknown</string>
+  <string name="aos_version">Версия Atomic OS</string>
+  <string name="aos_version_default">Неизвесно</string>
   <!-- About phone screen, build date -->
-  <string name="build_date">Build date</string>
-  <string name="build_date_default">2015-01-01-0000</string>
+  <string name="build_date">Дата сборки</string>
+  <string name="build_date_default">01.01.2015 00:00</string>
   <!-- About phone screen, device maintainer name -->
-  <string name="device_maintainer">Maintainer</string>
+  <string name="device_maintainer">Разработчик</string>
   <!-- Laboratory -->
-  <string name="aos_laboratory_activity">Laboratory</string>
-  <string name="aos_laboratory_activity_summary">Time to become a scientist !</string>
+  <string name="aos_laboratory_activity">Лаборатория</string>
+  <string name="aos_laboratory_activity_summary">Настало время стать учёным!</string>
   <!-- Pixel color on sim card -->
   <string name="default_sim_color">Pixel</string>
   <!-- Scramble PIN Layout on Lockscreen -->
   <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
   <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
   <!-- Quick unlock -->
-  <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-  <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+  <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
+  <string name="unlock_quick_unlock_control_summary">Разблокировать автоматически после ввода правильного PIN-кода/пароля</string>
   <!-- ANBI -->
   <string name="anbi_title">Accidental touch</string>
   <string name="anbi_summary">Prevent interaction with navigation buttons while the screen is being touched</string>
