@@ -33,31 +33,31 @@
   <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
   <string name="unlock_quick_unlock_control_summary">Разблокировать автоматически после ввода правильного PIN-кода/пароля</string>
   <!-- ANBI -->
-  <string name="anbi_title">Accidental touch</string>
-  <string name="anbi_summary">Prevent interaction with navigation buttons while the screen is being touched</string>
+  <string name="anbi_title">Случайное нажатие</string>
+  <string name="anbi_summary">Не реагировать на кнопки навигации, когда происходит взаимодействие с экраном</string>
   <!-- Screenshot sound -->
-  <string name="screenshot_sound_title">Screenshot sound</string>
+  <string name="screenshot_sound_title">Звук снимка экрана</string>
   <!-- Display : Rotation -->
-  <string name="display_rotation_title">Rotation</string>
-  <string name="display_rotation_disabled">Disabled</string>
-  <string name="display_rotation_unit">degrees</string>
-  <string name="display_rotation_category_title">Rotation modes</string>
-  <string name="display_rotation_0_title">0 degrees</string>
-  <string name="display_rotation_90_title">90 degrees</string>
-  <string name="display_rotation_180_title">180 degrees</string>
-  <string name="display_rotation_270_title">270 degrees</string>
+  <string name="display_rotation_title">Автоповорот</string>
+  <string name="display_rotation_disabled">Отключено</string>
+  <string name="display_rotation_unit">градусов</string>
+  <string name="display_rotation_category_title">Режимы поворота</string>
+  <string name="display_rotation_0_title">0 градусов</string>
+  <string name="display_rotation_90_title">90 градусов</string>
+  <string name="display_rotation_180_title">180 градусов</string>
+  <string name="display_rotation_270_title">270 градусов</string>
   <!-- App Ops Settings -->
   <!-- App Ops Categories -->
-  <string name="app_ops_cat_location">Location</string>
-  <string name="app_ops_cat_personal">Personal</string>
-  <string name="app_ops_cat_messaging">Messaging</string>
-  <string name="app_ops_cat_media">Media</string>
-  <string name="app_ops_cat_device">Device</string>
-  <string name="app_ops_cat_bootup">Bootup</string>
+  <string name="app_ops_cat_location">Местоположение</string>
+  <string name="app_ops_cat_personal">Личные данные</string>
+  <string name="app_ops_cat_messaging">Сообщения</string>
+  <string name="app_ops_cat_media">Мультимедиа</string>
+  <string name="app_ops_cat_device">Устройство</string>
+  <string name="app_ops_cat_bootup">Автозапуск</string>
   <!-- [CHAR LIMIT=NONE] App ops labels -->
-  <string name="app_ops_access_camera">camera</string>
-  <string name="app_ops_access_location">location</string>
-  <string name="app_ops_access_notifications">notifications</string>
+  <string name="app_ops_access_camera">камера</string>
+  <string name="app_ops_access_location">местоположение</string>
+  <string name="app_ops_access_notifications">уведомления</string>
   <string name="app_ops_activate_vpn">VPN</string>
   <string name="app_ops_auto_start">autostart</string>
   <string name="app_ops_delete_call_log">delete call log</string>
