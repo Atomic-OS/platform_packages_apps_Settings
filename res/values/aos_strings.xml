@@ -167,7 +167,4 @@
     <!-- Vibrate on plug -->
     <string name="vibration_on_charge_state_changed_title">Vibrate on plug</string>
 
-    <!-- SIM selector for SMS -->
-    <string name="select_sim_for_sms">Select a SIM for SMS</string>
-
 </resources>
