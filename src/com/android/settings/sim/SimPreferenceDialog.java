@@ -147,9 +147,10 @@ public class SimPreferenceDialog extends Activity {
             numberView.setText(PhoneNumberUtils.formatNumber(rawNumber));
         }
 
-        CharSequence simCarrierName = getSubscriptionCarrierName(mSubInfoRecord);
+        String simCarrierName = tm.getSimOperatorName(mSubInfoRecord.getSubscriptionId());
         TextView carrierView = (TextView)mDialogLayout.findViewById(R.id.carrier);
-        carrierView.setText(simCarrierName);
+        carrierView.setText(!TextUtils.isEmpty(simCarrierName) ? simCarrierName :
+                mContext.getString(com.android.internal.R.string.unknownName));
 
         mBuilder.setTitle(String.format(res.getString(R.string.sim_editor_title),
                 (mSubInfoRecord.getSimSlotIndex() + 1)));
@@ -160,9 +161,6 @@ public class SimPreferenceDialog extends Activity {
                 final EditText nameText = (EditText)mDialogLayout.findViewById(R.id.sim_name);
                 Utils.setEditTextCursorPosition(nameText);
                 String displayName = nameText.getText().toString();
-                if (TextUtils.isEmpty(displayName)) {
-                    displayName = "CARD " + Integer.toString(mSubInfoRecord.getSimSlotIndex() + 1);
-                }
                 int subId = mSubInfoRecord.getSubscriptionId();
                 mSubInfoRecord.setDisplayName(displayName);
                 mSubscriptionManager.setDisplayName(displayName, subId,
@@ -192,12 +190,6 @@ public class SimPreferenceDialog extends Activity {
         });
 
         mBuilder.create().show();
-    }
-
-    private String getSubscriptionCarrierName(SubscriptionInfo sir) {
-        CharSequence simCarrierName = sir.getCarrierName();
-        return !TextUtils.isEmpty(simCarrierName) ? simCarrierName.toString() :
-                mContext.getString(com.android.internal.R.string.unknownName);
     }
 
     private class SelectColorAdapter extends ArrayAdapter<CharSequence> {
