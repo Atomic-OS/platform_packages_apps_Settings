@@ -224,4 +224,9 @@
     <string name="alert_on_charged_level_80">"80%"</string>
     <string name="alert_on_charged_level_90">"90%"</string>
     <string name="alert_on_charged_level_99">"99%"</string>
+
+    <!-- Display categories -->
+    <string name="ambient_display_category">Ambient display options</string>
+    <string name="gestures_under_display_category">Gestures options</string>
+
 </resources>
