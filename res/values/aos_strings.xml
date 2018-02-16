@@ -207,5 +207,9 @@
     <string name="lock_directly_show_pattern">Directly show pattern view</string>
     <string name="lock_directly_show_pin">Directly show PIN entry</string>
     <string name="lock_directly_show_summary">Skip the swipe up to unlock screen when unlocking the device</string>
- 
+
+    <!-- Display categories -->
+    <string name="ambient_display_category">Ambient display options</string>
+    <string name="gestures_under_display_category">Gestures options</string>
+
 </resources>

@@ -102,6 +102,10 @@
         android:title="@string/screensaver_settings_title"
         android:fragment="com.android.settings.dream.DreamSettings" />
 
+    <PreferenceCategory
+        android:key="ambient_display_category"
+        android:title="@string/ambient_display_category">
+
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <Preference
         android:key="ambient_display"
@@ -114,6 +118,8 @@
             android:title="@string/force_ambient_for_media_pref_title"
             android:summary="@string/force_ambient_for_media_pref_summary"/>
 
+    </PreferenceCategory>
+
     <!-- Hide night mode for now
     <ListPreference
         android:key="night_mode"
@@ -122,6 +128,10 @@
         android:summary="@string/night_mode_summary"
         android:entries="@array/night_mode_entries"
         android:entryValues="@array/night_mode_values" /> -->
+
+    <PreferenceCategory
+        android:key="gestures_under_display_category"
+        android:title="@string/gestures_under_display_category">
 
     <SwitchPreference
         android:key="camera_gesture"
@@ -152,5 +162,7 @@
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
