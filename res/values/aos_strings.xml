@@ -212,4 +212,8 @@
     <string name="ambient_display_category">Ambient display options</string>
     <string name="gestures_under_display_category">Gestures options</string>
 
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
+
 </resources>
