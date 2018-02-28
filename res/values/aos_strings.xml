@@ -232,4 +232,8 @@
     <string name="ramp_up_time_thirty">30s</string>
     <string name="ramp_up_time_sixty">60s</string>
 
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
+
 </resources>
