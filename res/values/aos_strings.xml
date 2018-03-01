@@ -236,4 +236,7 @@
     <!-- Link ring and notification volume -->
     <string name="link_volume_option_title">Link ring and notification volume</string>
 
+    <!-- Font picker -->
+    <string name="font_picker_title">Font</string>
+
 </resources>
