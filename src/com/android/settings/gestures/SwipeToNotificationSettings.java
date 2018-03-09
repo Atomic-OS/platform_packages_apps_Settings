@@ -38,6 +38,7 @@ public class SwipeToNotificationSettings extends DashboardFragment {
     private static final String TAG = "SwipeToNotifSettings";
 
     private static final String KEY = "gesture_swipe_down_fingerprint";
+    private static final String KEY_QUICK_PULLDOWN = "gesture_quick_pulldown_fingerprint";
 
     public static final String PREF_KEY_SUGGESTION_COMPLETE =
             "pref_swipe_to_notification_suggestion_complete";
@@ -75,6 +76,7 @@ public class SwipeToNotificationSettings extends DashboardFragment {
             Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new SwipeToNotificationPreferenceController(context, lifecycle, KEY));
+        controllers.add(new QuickPulldownPreferenceController(context, lifecycle, KEY_QUICK_PULLDOWN));
         return controllers;
     }
 

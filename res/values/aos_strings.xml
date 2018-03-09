@@ -248,4 +248,8 @@
     <string name="ramp_up_time_thirty">30s</string>
     <string name="ramp_up_time_sixty">60s</string>
 
+    <!-- Fingerprint quick pulldown -->
+    <string name="fp_quick_pulldown_title">Fingerprint quick pulldown</string>
+    <string name="fp_quick_pulldown_summary">Expand the quick settings panel with only one swipe on the fingerprint sensor.</string>
+
 </resources>
