@@ -256,4 +256,8 @@
     <string name="fp_quick_pulldown_title">Fingerprint quick pulldown</string>
     <string name="fp_quick_pulldown_summary">Expand the quick settings panel with only one swipe on the fingerprint sensor.</string>
 
+    <!-- Search -->
+    <string name="menu_search">Search apps</string>
+    <string name="menu_search_hint">Search apps\u2026</string>
+
 </resources>
