@@ -111,6 +111,12 @@
         android:key="theme_category"
         android:title="@string/theme_category_title">
 
+    <com.aos.laboratory.preferences.SystemSettingSwitchPreference
+        android:key="force_allow_system_themes"
+        android:title="@string/force_allow_system_themes_title"
+        android:summary="@string/force_allow_system_themes_summary"
+        android:defaultValue="false" />
+
         <ListPreference
             android:key="systemui_theme_style"
             android:title="@string/systemui_theme_style_title"

@@ -38,6 +38,7 @@ import com.android.settings.display.ColorModePreferenceController;
 import com.android.settings.display.DarkUIPreferenceController;
 import com.android.settings.display.FontPickerPreferenceController;
 import com.android.settings.display.FontSizePreferenceController;
+import com.android.settings.display.ForceAllowThemePreferenceController;
 import com.android.settings.display.LiftToWakePreferenceController;
 import com.android.settings.display.NightDisplayPreferenceController;
 import com.android.settings.display.NightModePreferenceController;
@@ -54,6 +55,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import java.util.ArrayList;
 import java.util.List;
+import android.util.Log;
 
 public class DisplaySettings extends DashboardFragment {
     private static final String TAG = "DisplaySettings";
@@ -66,6 +68,8 @@ public class DisplaySettings extends DashboardFragment {
 
     private IntentFilter mIntentFilter;
     private static FontPickerPreferenceController mFontPickerPreference;
+    private static AccentPickerPreferenceController mAccentPickerPreference;
+    private static DarkUIPreferenceController mUIStylePreference;
 
     private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
         @Override
@@ -134,11 +138,10 @@ public class DisplaySettings extends DashboardFragment {
             Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(mFontPickerPreference = new FontPickerPreferenceController(context, lifecycle, fragment));
-        controllers.add(new AccentPickerPreferenceController(context, lifecycle, fragment));
+        controllers.add(mAccentPickerPreference = new AccentPickerPreferenceController(context, lifecycle, fragment));
         controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
         // controllers.add(new AutoRotatePreferenceController(context, lifecycle));
         controllers.add(new CameraGesturePreferenceController(context));
-        controllers.add(new DarkUIPreferenceController(context));
         controllers.add(new FontSizePreferenceController(context));
         controllers.add(new LiftToWakePreferenceController(context));
         controllers.add(new NightDisplayPreferenceController(context));
@@ -154,6 +157,8 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new VrDisplayPreferenceController(context));
         controllers.add(new WallpaperPreferenceController(context));
         controllers.add(new ThemePreferenceController(context));
+        controllers.add(mUIStylePreference = new DarkUIPreferenceController(context, lifecycle, fragment));
+        controllers.add(new ForceAllowThemePreferenceController(context, mUIStylePreference, mAccentPickerPreference, mFontPickerPreference));
         controllers.add(new BrightnessLevelPreferenceController(context, lifecycle));
         controllers.add(new ColorModePreferenceController(context));
         return controllers;
